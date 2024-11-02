@@ -9,6 +9,7 @@ import SupportUs from './components/SupportUs';
 import Resource from './components/Resource';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Navbar from './components/NavBar'; // Import Navbar
+import Footer from './components/Footer'; // Import Footer
 import './i18n';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/support-us" element={<SupportUs />} />
         <Route path="/resource" element={<Resource />} />
       </Routes>
+      <Footer /> {/* Add Footer at the bottom */}
     </Router>
   );
 }
