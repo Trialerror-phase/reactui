@@ -1,5 +1,6 @@
 // src/components/ApplyForSupport.js
 import React from 'react';
+import Header from './Header';
 import { useTranslation } from 'react-i18next';
 
 const ApplyForSupport = () => {
@@ -7,7 +8,7 @@ const ApplyForSupport = () => {
 
   return (
     <div>
-      <h1>{t('applyForSupport')}</h1>
+       <Header title="Apply for Support" />
       <form>
         <label>
           Name:

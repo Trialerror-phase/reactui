@@ -1,0 +1,30 @@
+/* src/components/Header.css */
+
+.header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.header-title {
+  position: relative;
+  font-size: 2rem;
+  z-index: 1;
+  padding: 0 20px;
+}

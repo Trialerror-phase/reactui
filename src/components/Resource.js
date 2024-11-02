@@ -1,5 +1,6 @@
 // src/components/Resource.js
 import React from 'react';
+import Header from './Header';
 import { useTranslation } from 'react-i18next';
 
 const Resource = () => {
@@ -7,7 +8,7 @@ const Resource = () => {
 
   return (
     <div>
-      <h1>{t('resource')}</h1>
+       <Header title="Resounces" />
       <p>Find helpful information, guides, and resources to support students and parents.</p>
       <ul>
         <li>Scholarship Opportunities</li>

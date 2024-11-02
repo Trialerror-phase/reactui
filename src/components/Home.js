@@ -1,5 +1,6 @@
 // src/components/Home.js
 import React from 'react';
+import Header from './Header';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -7,9 +8,11 @@ const Home = () => {
 
   return (
     <div>
-      <h1>{t('home')}</h1>
-      <p>Welcome to our organization helping provide school funding in Kisumu.</p>
+    <Header title="Home" backgroundImage="src\assets\secondary-1170x536.jpg" />
+    <div className="container">
+      <p>Welcome to our non-profit organization website!</p>
     </div>
+  </div>
   );
 };
 

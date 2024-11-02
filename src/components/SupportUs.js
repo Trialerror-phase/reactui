@@ -1,5 +1,6 @@
 // src/components/SupportUs.js
 import React from 'react';
+import Header from './Header';
 import { useTranslation } from 'react-i18next';
 
 const SupportUs = () => {
@@ -7,7 +8,7 @@ const SupportUs = () => {
 
   return (
     <div>
-      <h1>{t('supportUs')}</h1>
+       <Header title="Support Us" />
       <p>Your support can help us reach more children in need. Join us in making education accessible.</p>
       <button>Donate Now</button>
     </div>
