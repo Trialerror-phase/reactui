@@ -24,9 +24,9 @@ Ya Juu Foundation is set up with the money I saved for my pension. This is the b
 
 Dr. Anja van’t Hoog</p>
 <img
-          src="src\assets\secondary-1170x536.jpg" // Replace with the URL or path to your image
+          src="Anja-21-maart-2023-scaled.jpg.crdownload" // Replace with the URL or path to your image
           alt="Our mission"
-          className="home-image"
+          
         />
       <h1>Mission and Vision</h1>
       <p>The mission of Ya Juu Foundation is to contribute to increasing numbers of educated adolescents and self- reliant young adults in (Western) Kenya by providing access to secondary and higher education and/or supporting them in other ways to increase their employability for work so they will be able to earn an income for themselves. Our vision is that all adolescents and young adults have the right to education and to develop themselves to their full potential so they can look after themselves and play a contributing role in their society. This is in the continuation in spirit of the founder of the organisation, dr. Anja van ‘t Hoog, who supported several adolescents and young adults in Kenya with this purpose.</p>
