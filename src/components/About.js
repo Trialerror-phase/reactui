@@ -1,13 +1,14 @@
 // src/components/About.js
 import React from 'react';
 import Header from './Header';
+import './Header.css';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="about">
        <Header title="About" />
        <h1>About the founder</h1>
        <p>Dr. Anja van’t Hoog was born on march 21, 1964, in Schipluiden (NL). She studied medicine at the University of Utrecht and reached her medical degree in 1993. After her training as a Dutch Tropical Doctor she went to Kenya in 1996. Unfortunately she passed away on august 11, 2023. Ya Juu Foundation is her legacy.
