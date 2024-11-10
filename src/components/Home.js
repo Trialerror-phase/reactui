@@ -1,6 +1,8 @@
 // src/components/Home.js
 import React from 'react';
 import Header from './Header';
+import './Header.css';
+
 
 
 import { useTranslation } from 'react-i18next';
@@ -9,7 +11,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <div >
+    <div className="about" >
     <Header title="With education
 to the next level"  />
     <div className="container">
