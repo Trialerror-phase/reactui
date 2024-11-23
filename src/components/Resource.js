@@ -29,6 +29,17 @@ const Resource = () => {
         <li>Local Education Programs</li>
         <li>Guides for Parents and Guardians</li>
       </ul>
+
+      <h2>test</h2>
+      <p>“I am proud to be the first in my family to graduate from a university with a degree. It made me a role model for my younger siblings and cousins who have worked very hard to also join university after me. It has been quite a journey for me. I studied for a Bachelor of Arts with IT at the Maseno University. After my graduation I got at the same university a post graduate diploma in Education which enabled me to become a qualified high school teacher. 
+
+It was hard to find employment after I finished with my studies in 2013. It took a while before I got a permanent job even at institutions where the pay is very little. But I persevered. Now I have a full time position and teach Kiswahili and Religious Studies at the Rae Girls High School in Nyakach sub-county. Having gone through the education system and being a teacher gave me a broader view of life. Read Less
+
+I am now independent and able to make ends meet for my family which consists of my husband and three sons. I support my siblings too. Like I was supported by Anja. She not only gave me financial support but also encouragement to get me through my education. 
+
+My mum, who worked for Anja, always prioritized education. It hurts me that my mum died even before she could see where I had reached in my career and before tasting my money after all what she did for me.
+
+ </p>
     </div>
   );
 };
