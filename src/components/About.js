@@ -57,6 +57,7 @@ const About = () => {
             />
             <h3>Board Member {index + 1}</h3>
             <p>Brief description of the board member and their role.</p>
+            <p>board</p>
           </div>
         ))}
       </div>
