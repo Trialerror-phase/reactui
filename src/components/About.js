@@ -31,10 +31,11 @@ const About = () => {
           </p>
         </div>
         <img
-          src="Anja-21-maart-2023-scaled.jpg" // Replace with the correct URL or path to the image
-          alt="Dr. Anja van’t Hoog"
-          className="founder-image"
-        />
+          
+           src="\assets\Anja-21-maart-2023-768x1024.jpg" alt="Introduction"
+          
+          className="founder-image" />
+        
       </div>
 
       <h1>Mission and Vision</h1>
