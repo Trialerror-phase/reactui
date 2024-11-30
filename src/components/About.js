@@ -69,8 +69,14 @@ const About = () => {
     <div className="about">
       <Header title="About" />
 
-      <h1>About the Founder</h1>
+      <h1 className='about-h'>About the Founder</h1>
       <div className="founder-section">
+        
+      <img
+          src="\assets\Anja-21-maart-2023-768x1024.jpg"
+          alt="Dr. Anja van’t Hoog"
+          className="founder-image"
+        />
         <div className="founder-text">
           <p>
             {showFullText
@@ -81,14 +87,15 @@ const About = () => {
             {showFullText ? 'Read Less' : 'Read More'}
           </button>
         </div>
+       
         <img
-          src="\assets\Anja-21-maart-2023-768x1024.jpg"
-          alt="Dr. Anja van’t Hoog"
-          className="founder-image"
-        />
+      src="\assets\Anja-daktari-768x1024.jpg" // Replace with the actual path
+      alt="Additional Image"
+      className="founder-image"
+    />
       </div>
 
-      <h1>Mission, Vision, and Philosophy</h1>
+      <h1 className='mis'>Mission, Vision, and Philosophy</h1>
       <div className="mission-vision-philosophy">
         <div className="section">
           <h2>Mission</h2>
@@ -110,7 +117,8 @@ const About = () => {
         </div>
       </div>
 
-      <h1>About the board</h1>
+      <h1 className='bo'>About the board</h1>
+      <p className='bo'>The board members work on a voluntary basis. The Board of the Foundation consists of four voluntary members, who are not paid for their services. Declaration of costs is possible if they are necessary for the tasks performed by the board members. Our regulations stipulate the roles of the board members and how things are organized within the Foundation.</p>
 <div className="board-members">
   {boardMembers.map((member, index) => (
     <div key={index} className="board-card">
