@@ -4,9 +4,32 @@ import Header from './Header';
 import './Header.css';
 import './About.css'; // Import the CSS file for additional styling
 import { useTranslation } from 'react-i18next';
+import  { useState } from 'react'
 
 const About = () => {
+ 
+
+
+
   const { t } = useTranslation();
+  const [showFullText, setShowFullText] = useState(false); // State to toggle text
+
+  // Function to handle "Read More" click
+  const toggleText = () => setShowFullText((prev) => !prev);
+
+  const founderText = `
+    Dr. Anja van’t Hoog was born on March 21, 1964, in Schipluiden (NL). She studied medicine at the University of Utrecht and reached her medical degree in 1993. After her training as a Dutch Tropical Doctor she went to Kenya in 1996. Unfortunately, she passed away on August 11, 2023. Ya Juu Foundation is her legacy.
+
+    “With my foundation, I want to support young people in Kenya, who cannot afford fees for secondary school or higher education. Completing education and being able to create your own income is very important in life.
+
+    In the eighties and nineties, I was lucky to be able to study medicine. I come from a farmer’s family and was the first who wanted to go to university. I reaped the benefits of the social democratic governments we had in the Netherlands, which very much supported anyone who wanted to get higher education.
+
+    I was an adventurous young woman and after becoming a doctor, I specialized in tropical medicine which gave me the opportunity to go and work abroad. In 1996 I arrived in Kenya, more precisely in the western part of the country. I worked first as a doctor and later focused on research in the medical field.
+
+    Ya Juu Foundation is set up with the money I saved for my pension. This is the best way of making good use of it.”
+
+    Dr. Anja van’t Hoog
+  `;
 
   const boardMembers = [
     {
@@ -50,18 +73,13 @@ const About = () => {
       <div className="founder-section">
         <div className="founder-text">
           <p>
-          Dr. Anja van’t Hoog was born on March 21, 1964, in Schipluiden (NL). She studied medicine at the University of Utrecht and reached her medical degree in 1993. After her training as a Dutch Tropical Doctor she went to Kenya in 1996. Unfortunately, she passed away on August 11, 2023. Ya Juu Foundation is her legacy.
-            <br /><br />
-            “With my foundation, I want to support young people in Kenya, who cannot afford fees for secondary school or higher education. Completing education and being able to create your own income is very important in life.
-            <br /><br />
-            In the eighties and nineties, I was lucky to be able to study medicine. I come from a farmer’s family and was the first who wanted to go to university. I reaped the benefits of the social democratic governments we had in the Netherlands, which very much supported anyone who wanted to get higher education.
-            <br /><br />
-            I was an adventurous young woman and after becoming a doctor, I specialized in tropical medicine which gave me the opportunity to go and work abroad. In 1996 I arrived in Kenya, more precisely in the western part of the country. I worked first as a doctor and later focused on research in the medical field.
-            <br /><br />
-            Ya Juu Foundation is set up with the money I saved for my pension. This is the best way of making good use of it.”
-            <br /><br />
-            Dr. Anja van’t Hoog
+            {showFullText
+              ? founderText
+              : `${founderText.substring(0, 1000)}...`} {/* Show truncated text */}
           </p>
+          <button onClick={toggleText} className="read-more-btn">
+            {showFullText ? 'Read Less' : 'Read More'}
+          </button>
         </div>
         <img
           src="\assets\Anja-21-maart-2023-768x1024.jpg"
