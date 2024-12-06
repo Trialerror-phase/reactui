@@ -1,11 +1,11 @@
 /* src/components/Footer.css */
 
 .footer {
-    background-color: #333;
+    background-color: yellowgreen;
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin-top: 10px;
+    
   }
   
   .footer-content {

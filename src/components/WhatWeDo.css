@@ -1,0 +1,23 @@
+.content-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between text and images */
+    align-items: center; /* Vertically center-align items */
+    margin-bottom: 40px; /* Add spacing below sections */
+  }
+  
+  .content-section p {
+    flex: 1 1 50%; /* Text takes up 50% of the width */
+    max-width: 50%; /* Prevents text from stretching too wide */
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Improve text readability */
+  }
+  
+  .content-image {
+    flex: 1 1 50%; /* Image takes up 50% of the width */
+    max-width: 50%; /* Prevents image from stretching too wide */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  }
+  

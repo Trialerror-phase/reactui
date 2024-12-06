@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import { useTranslation } from 'react-i18next';
+import './WhatWeDo.css';
 
 const WhatWeDo = () => {
   const { t } = useTranslation();
@@ -9,17 +10,21 @@ const WhatWeDo = () => {
   return (
     <div>
       <Header title="What we Do" />
+      
       <h1>Where we work</h1>
-      <p>Our focus is on children and young adults from a poor background who are living in the Kenyan provinces Western Kenya and Nyanza which are embracing Lake Victoria. Our founder has lived and worked in both.
-
-        Dr Anja has been working and living in Kenya for over 14 years from 1997 to 2011. She started as a mission doctor of the Dutch development organisation Memisa Medicus Mundi for the Catholic Diocese of Kakamega, Western Kenya. Her first station was St. Mary’s Hospital in Mukumu. Later on she was posted at St. Elizabeth Mission Hospital in Mumias. These first three years working in both hospitals formed Dr Anja in many ways, on a personal and professional level. She thoroughly enjoyed her work in these rural hospitals and absorbed herself in the Kenyan way of life.
-        Nevertheless when the Kenya Medical Research Institute (KEMRI) offered her a job, she took it up to pursue her passion in research. In 2000 Dr Anja moved to Kisumu, where she became the coordinator of the PMTCT program and other HIV/AIDS activities.
-        From 2004 till 2010, Dr Anja was the principal investigator of the KEMRI/CDC tuberculosis prevalence survey and other studies on tuberculosis case finding and mortality in Western Kenya.Read More</p>
+      <div className="content-section">
+        <p>
+          Our focus is on children and young adults from a poor background who are living in the Kenyan provinces Western Kenya and Nyanza which are embracing Lake Victoria. Our founder has lived and worked in both.
+          <br />
+          <br />
+          Dr Anja has been working and living in Kenya for over 14 years from 1997 to 2011. She started as a mission doctor of the Dutch development organisation Memisa Medicus Mundi for the Catholic Diocese of Kakamega, Western Kenya. Her first station was St. Mary’s Hospital in Mukumu. Later on she was posted at St. Elizabeth Mission Hospital in Mumias. These first three years working in both hospitals formed Dr Anja in many ways, on a personal and professional level. She thoroughly enjoyed her work in these rural hospitals and absorbed herself in the Kenyan way of life. Nevertheless when the Kenya Medical Research Institute (KEMRI) offered her a job, she took it up to pursue her passion in research. In 2000 Dr Anja moved to Kisumu, where she became the coordinator of the PMTCT program and other HIV/AIDS activities. From 2004 till 2010, Dr Anja was the principal investigator of the KEMRI/CDC tuberculosis prevalence survey and other studies on tuberculosis case finding and mortality in Western Kenya.
+        </p>
         <img
-          src="src\assets\secondary-1170x536.jpg" // Replace with the URL or path to your image
+          src="\assets\Map-Kenya-1170x536-1.jpg" // Replace with the actual path to your image
           alt="Our mission"
-          className="home-image"
+          className="content-image"
         />
+      </div>
       <h1>
         What we support
       </h1>
